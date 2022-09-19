@@ -1,0 +1,14 @@
+data_ica = read.delim("clipboard")
+View(data_ica)
+mean(data_ica$Tinggi.Badan)
+str(data_ica)
+
+data_ica_csv = read.csv("C:/Users/siti aisah/Documents/GANJIL 2022/PRAKTIKUM STATISTIKA/BahanPraktikum1_Dataica.csv")
+View(data_ica_csv)
+mean(data_ica_csv$Tinggi.Badan)
+str(data_ica_csv)
+
+install.packages("xlsx")
+library("xlsx")
+
+data_ica_xlsx = read.xlsx("C:/users/siti aisah/Documents/GANJIL 2022/PRAKTIKUM STATISTIKA/BahanPraktikum1_Dataica.xlsx",1)
