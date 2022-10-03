@@ -1,0 +1,25 @@
+data_ica=read.delim("clipboard")
+View(data_ica)
+ica <- data_ica[4]
+View(ica)
+ica$Tinggi.Badan <- ifelse(ica$Tinggi.Badan > 160, c("Tinggi"), c("Pendek"))
+View(ica)
+ica$Jurusan <- "Infor 21"
+View(ica)
+ica$Fakultas <- "FTI"
+View(ica)
+ica$Fakultas<-NULL
+View(ica)
+data_ica.kolom1dan2 <- data_ica[,1:2]
+View(data_ica.kolom1dan2)
+data_ica.kolom3dan4<- data_ica[,3:4]
+View(data_ica.kolom3dan4)
+data_ica.kolom<-cbind(data_ica.kolom1dan2,data_ica.kolom3dan4)
+View(data_ica.kolom)
+data_ica.baris1sd5<-data_ica[1:5,]
+View(data_ica.baris1sd5)
+data_ica.baris25sd30<-data_ica[25:30,]
+data_ica.baris<-rbind(data_ica.baris1sd5,data_ica.baris25sd30)
+View(data_ica.baris)
+data_ica.sort <- data_ica[order(data_ica$Waktu.perjalanan),]
+View(data_ica.sort)
