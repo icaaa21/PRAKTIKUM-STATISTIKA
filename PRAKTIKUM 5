@@ -1,0 +1,4 @@
+aisah=read.delim("clipboard")
+View(aisah)
+str(aisah)
+t.test(aisah$volume, mu=14500)
