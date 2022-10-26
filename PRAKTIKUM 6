@@ -1,0 +1,8 @@
+aisah = read.csv("C:/Users/siti aisah/Documents/GANJIL 2022/PRAKTIKUM STATISTIKA//DirectMarketing.csv", sep = ";")
+hist(aisah$AmountSpent)
+d=density(aisah$AmountSpent)
+plot(d)
+
+aisah = read.csv("C:/Users/siti aisah/Documents/GANJIL 2022/PRAKTIKUM STATISTIKA//houseprices.csv", sep = ";")
+qplot(aisah$Price, aisah$SqFt)
+plot(aisah$Price, aisah$SqFt)
