@@ -1,0 +1,10 @@
+data3 = data_nama[['Name', 'Sex', 'Age', 'Pclass', 'Fare']]
+penumpang=data3.groupby('Sex')['Name'].nunique()
+print('Jumlah Penumpang:\n', penumpang)
+
+
+data4 = data_aisah[['Name', 'Sex', 'Age', 'Pclass', 'Fare']]
+notsurvivedpassanger=data4['Sex'].loc[data_aisah['Survived']==0]
+print('Penumpang yang tidak survived:\n', notsurvivedpassanger.value_counts())
+survivedpassanger=data4['Sex'].loc[data_aisah['Survived']==1]
+print('\nPenumpang yang survived:\n', survivedpassanger.value_counts())
