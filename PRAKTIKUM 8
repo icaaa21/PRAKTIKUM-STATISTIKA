@@ -1,0 +1,18 @@
+1. Buatlah Scatter Plot Harga Rumah Berdasarkan Bedrooms!
+col_list=['Price', 'Bedrooms']
+numhouse = data_aisah[data_aisah.columns[data_aisah.columns.isin(col_list)]]
+numhouse.plot.scatter(x='Bedrooms', y='Price')
+
+2. Buatlah Scatter Plot Harga Rumah berdasarkan Bathrooms!
+col_list=['Price', 'Bathrooms']
+numhouse = data_aisah[data_aisah.columns[data_aisah.columns.isin(col_list)]]
+numhouse.plot.scatter(x='Bathrooms', y='Price')
+
+3. Buatlah Grouped Boxplot berdasarkan Bathrooms dengan Price sebagai perbandingannya!
+col_list=['Price', 'Bathrooms']
+numhouse = data_aisah[data_aisah.columns[data_aisah.columns.isin(col_list)]]
+plt.figure(figsize=(15,5))
+numhouse.boxplot(by='Bathrooms')
+plt.show()
+
+
